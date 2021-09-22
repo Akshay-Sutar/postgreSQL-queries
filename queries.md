@@ -28,3 +28,14 @@ DROP CONSTRAINT products_name_key`
 
 `ALTER TABLE products 
 ADD CHECK(price >=0)`
+
+## Adding index
+`create index on users(username)`
+OR
+`create index users_username_idx on users(username)`
+
+## Droping index
+`drop index users_username_idx `
+
+## get execution time
+`explain analyze select * from users where username='Emil30'`
